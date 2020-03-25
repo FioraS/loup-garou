@@ -117,7 +117,48 @@ const Button = styled.button(["background-color: red"]);
 On utilise les props dans la css. background-color: ${props => props.disabled ? 'red' : 'green'};
 
 - Reprendre l'exemple du Material UI avec styled-components; l'écrire avec la composition et avec l'héritage.
+```javascript
+//code avec la composition
 
+import React, { Component } from "react";
+import styled from 'styled-components'
+
+
+class App extends Component {
+    render() {
+        return (
+          <div>
+              <Button1>Bleu </Button1>
+              <Button2>Rouge</Button2>
+          </div>
+            );
+    }
+}
+
+const commonStyle = `
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 16px;
+  fontSize: 15,
+  fontFamily: "Arial"
+  `
+
+const Button1 = styled.button`
+  ${commonStyle};
+  background-color: blue;
+  `
+
+const Button2 = styled.button`
+  ${commonStyle};
+  background-color: red;
+  `
+  
+export default (App);
+
+
+//code avec l'héritage
+
+```
 - Quelles sont les fonctions du contexte de styled-components ? Le contexte de styled-components permet de faciliter la création de composants visuels pour styliser.
 
 
