@@ -43,7 +43,7 @@ Avec overrides
 withStyle fait penser à la CSS. On l'importe et on créer un fichier style.
 
 - Reproduire les deux boutons rouge et bleu présentées dans la vidéo.
-
+```javascript
 import React, { Component } from "react";
 import { MuiThemeProvider, createMuiTheme, withStyles } from "@material-ui/core/styles";
 import blue from "@material-ui/core/colors/blue";
@@ -87,6 +87,7 @@ const theme = createMuiTheme({
 });
 
 export default withStyles(styles)(App);
+```
 
 
 ## Styled Components
