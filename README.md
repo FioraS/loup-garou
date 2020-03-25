@@ -121,7 +121,7 @@ On utilise les props dans la css. background-color: ${props => props.disabled ? 
 //code avec la composition
 
 import React, { Component } from "react";
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 
 class App extends Component {
@@ -139,8 +139,8 @@ const commonStyle = `
   border-radius: 3px;
   cursor: pointer;
   padding: 8px 16px;
-  fontSize: 15,
-  fontFamily: "Arial"
+  fontSize: 15;
+  fontFamily: "Arial";
   `
 
 const Button1 = styled.button`
@@ -157,6 +157,36 @@ export default (App);
 
 
 //code avec l'héritage
+
+import React, { Component } from "react";
+import styled from 'styled-components';
+
+class App extends Component {
+    render() {
+        return (
+          <div>
+              <Button1>Bleu </Button1>
+              <Button2>Rouge</Button2>
+          </div>
+            );
+    }
+}
+
+const Button1 = styled.button`
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px 16px;
+  fontSize: 15;
+  fontFamily: "Arial";
+  
+  background-color: blue;
+  `
+  
+const Button2 = styled(Button1)`
+  background-color: red;
+  `
+
+export default (App);
 
 ```
 - Quelles sont les fonctions du contexte de styled-components ? Le contexte de styled-components permet de faciliter la création de composants visuels pour styliser.
