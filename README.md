@@ -40,7 +40,7 @@ Modifier la couleur
 Avec overrides
 
 - A quoi vous fait penser `withStyle` ? Comment l'utiliser ?
-withStyle fait penser à la CSS. On l'importe et on créer un fichier style.
+withStyle fait penser à un HOC. On l'importe et on créé un fichier style pour l'export.
 
 - Reproduire les deux boutons rouge et bleu présentées dans la vidéo.
 ```javascript
@@ -97,17 +97,15 @@ De la même manière, voici une [vidéo](https://www.youtube.com/watch?v=mS0UKNB
 Quelques petites questions :
 
 - Qu'est-ce que le CSS-in-JS ?
-Bibliothéque création de composants réutilisables. Génere des classes dynamique et permet d'imbriquer son code css.
-Il gère des scopes. Facilité d'écriture.
+Le CSS-in-Js comme son nom l'indique permet de faire du CSS dans du JS.
 
 - Qu'est-ce que sont les tagged templates (délimitées par des backticks) ?
-Ils permettent de simplifier le code en écrivant nos propriétés css.
+Ils permettent de simplifier le code.
 
 - Donner un exemple d'un bouton personnalisé avec et sans les tagged templates ?
 
 - Comment utilise-t-on les props dans cette librarie ?
-On utilise les props dans la css.
-Composition ou héritage.
+On utilise les props dans la css. background-color: ${props => props.disabled ? 'red' : 'green'};
 
 - Reprendre l'exemple du Material UI avec styled-components; l'écrire avec la composition et avec l'héritage.
 
