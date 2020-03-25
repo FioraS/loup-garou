@@ -97,10 +97,20 @@ De la même manière, voici une [vidéo](https://www.youtube.com/watch?v=mS0UKNB
 Quelques petites questions :
 
 - Qu'est-ce que le CSS-in-JS ?
+Bibliothéque création de composants réutilisables. Génere des classes dynamique et permet d'imbriquer son code css.
+Il gère des scopes. Facilité d'écriture.
+
 - Qu'est-ce que sont les tagged templates (délimitées par des backticks) ?
+Ils permettent de simplifier le code en écrivant nos propriétés css.
+
 - Donner un exemple d'un bouton personnalisé avec et sans les tagged templates ?
+
 - Comment utilise-t-on les props dans cette librarie ?
+On utilise les props dans la css.
+Composition ou héritage.
+
 - Reprendre l'exemple du Material UI avec styled-components; l'écrire avec la composition et avec l'héritage.
+
 - Quelles sont les fonctions du contexte de styled-components ?
 
 
