@@ -103,6 +103,15 @@ Le CSS-in-Js comme son nom l'indique permet de faire du CSS dans du JS.
 Ils permettent de simplifier le code.
 
 - Donner un exemple d'un bouton personnalisé avec et sans les tagged templates ?
+```javascript
+//Sans tagged templates
+const Button = styled.button(["background-color: red"]);
+
+//Avec tagged templates
+const Button = styled.button`
+        background-color: red;
+        `
+```
 
 - Comment utilise-t-on les props dans cette librarie ?
 On utilise les props dans la css. background-color: ${props => props.disabled ? 'red' : 'green'};
