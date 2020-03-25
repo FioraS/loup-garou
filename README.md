@@ -21,13 +21,27 @@ Je vous invite à regarder la vidéo de [Human Talks Paris](https://www.youtube.
 
 Quelques petites questions :
 
-- Résumer en une phrase l'intérêt de Material UI
+- Résumer en une phrase l'intérêt de Material UI 
+Material UI est une librairie développer par Google qui inclus des composants (boutons, menu, loader)
+
 - Comment importer `material-ui` dans un fichier ?
+import Button from "@material-ui/core/Button";
+
 - Comment une application peut utiliser un thème à travers l'ensemble d'un projet ?
+En encapsulant dans un MuiThemeProvider
+
 - A quoi sert `createMuiTheme` ?
+Il sert a personnaliser les composants
+
 - A quoi correspond `palette` ?
+Modifier la couleur
+
 - Comment re-définir des propriétés ?
+Avec overrides
+
 - A quoi vous fait penser `withStyle` ? Comment l'utiliser ?
+withStyle fait penser à la CSS. On l'importe et on créer un fichier style.
+
 - Reproduire les deux boutons rouge et bleu présentées dans la vidéo.
 
 
