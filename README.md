@@ -45,8 +45,8 @@ withStyle fait penser à la CSS. On l'importe et on créer un fichier style.
 - Reproduire les deux boutons rouge et bleu présentées dans la vidéo.
 
 import React, { Component } from "react";
-import { MuiProvider, createMuiTheme, withStyles } from "@material-ui/core/Button";
-import blue from "@material-ui/core/blue";
+import { MuiThemeProvider, createMuiTheme, withStyles } from "@material-ui/core/styles";
+import blue from "@material-ui/core/colors/blue";
 import Button from "@material-ui/core/Button";
 
 class App extends Component {
