@@ -40,7 +40,7 @@ Modifier la couleur
 Avec overrides
 
 - A quoi vous fait penser `withStyle` ? Comment l'utiliser ?
-withStyle fait penser à un HOC. On l'importe et on créé un fichier style pour l'export.
+ On l'importe et on créé un fichier style pour l'export.
 
 - Reproduire les deux boutons rouge et bleu présentées dans la vidéo.
 ```javascript
@@ -104,13 +104,13 @@ Ils permettent de simplifier le code.
 
 - Donner un exemple d'un bouton personnalisé avec et sans les tagged templates ?
 ```javascript
-//Sans tagged templates
-const Button = styled.button(["background-color: red"]);
-
 //Avec tagged templates
 const Button = styled.button`
         background-color: red;
         `
+        
+//Sans tagged templates
+const Button = styled.button(["background-color: red"]);
 ```
 
 - Comment utilise-t-on les props dans cette librarie ?
@@ -118,7 +118,7 @@ On utilise les props dans la css. background-color: ${props => props.disabled ? 
 
 - Reprendre l'exemple du Material UI avec styled-components; l'écrire avec la composition et avec l'héritage.
 
-- Quelles sont les fonctions du contexte de styled-components ?
+- Quelles sont les fonctions du contexte de styled-components ? Le contexte de styled-components permet de faciliter la création de composants visuels pour styliser.
 
 
 ## Mise en place du design
