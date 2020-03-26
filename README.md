@@ -253,18 +253,19 @@ const quelquechose = (props) => {
 3. UserProvider est le joueur. Il échange avec firebase les infos de connexion.
 
 - Identifier les différentes pages de l'application. Décrire à l'aide d'une phrase le rôle de chacune d'entre elles.
--->AlivePage: Page qui s'affiche aux joueurs vivants.
--->CastPage: Page pour procéder au vote.
--->CodePage: Page qui créer un code à partager à nos amis pour qu'ils rejoignent la partie.
--->CreatePage: Page pour créer la partie.
--->DeadPage: Page qui s'affiche aux joueurs morts.
--->EndPage: Page des résultats finaux de la partie.
--->NightPage: Page qui affiche les actions durant la nuit.
--->ResultsPage: Page qui affiche les personnes mortes durant la nuit.
--->SpellPage: Page des actions que peut faire le magicien.
--->StartPage: Page d'accueil lorsque l'on lance le jeu. On choisit si on créer une partie ou si on en rejoind une.
+1. AlivePage: Page qui s'affiche aux joueurs vivants.
+2. CastPage: Page pour procéder au vote.
+3. CodePage: Page qui créer un code à partager à nos amis pour qu'ils rejoignent la partie.
+4. CreatePage: Page pour créer la partie.
+5. DeadPage: Page qui s'affiche aux joueurs morts.
+6. EndPage: Page des résultats finaux de la partie.
+7. NightPage: Page qui affiche les actions durant la nuit.
+8. ResultsPage: Page qui affiche les personnes mortes durant la nuit.
+9. SpellPage: Page des actions que peut faire le magicien.
+10. StartPage: Page d'accueil lorsque l'on lance le jeu. On choisit si on créer une partie ou si on en rejoind une.
 
 - Pourquoi voit-on sur plusieurs pages "Chargement du master game en cours" ?
+Il est appelé dans game.js
 
 - Avec les classes, nous utilisions `withMyContext` pour s'inscrire aux données d'un provider. Identifier dans services/Game.js la fonction qui joue désormais ce rôle.
 - Dans `CodePage`, rappeler comment un formulaire gère les champs de remplissage des données.o
