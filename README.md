@@ -265,9 +265,16 @@ const quelquechose = (props) => {
 10. StartPage: Page d'accueil lorsque l'on lance le jeu. On choisit si on créer une partie ou si on en rejoind une.
 
 - Pourquoi voit-on sur plusieurs pages "Chargement du master game en cours" ?
-Il est appelé dans game.js
+Il est affiché sur plusieurs pages parce qu'il est appelé dans game.js. Il tourne dans le vide parce que la partie est pas commencé.
 
 - Avec les classes, nous utilisions `withMyContext` pour s'inscrire aux données d'un provider. Identifier dans services/Game.js la fonction qui joue désormais ce rôle.
+```javascript
+export const useGame = () => {
+  const {game} = useContext(gameContext);
+  return {game};
+};
+```
+
 - Dans `CodePage`, rappeler comment un formulaire gère les champs de remplissage des données.o
 
 ### Reprise du design
