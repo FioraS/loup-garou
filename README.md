@@ -248,9 +248,9 @@ const quelquechose = (props) => {
 ```
 
 - Dans `App.js`, identifier les différents producteurs de données. Retrouver leur définition. Quelles données partagent-ils à l'ensemble de l'application ?
--->MasterGameProvider est le maître du jeu. Il échange avec firebase.
--->GameProvider est le jeu. Il échange des infos du jeu avec firebase.
--->UserProvider est le joueur. Il échange avec firebase les infos de connexion.
+1. MasterGameProvider est le maître du jeu. Il échange avec firebase.
+2. GameProvider est le jeu. Il échange des infos du jeu avec firebase.
+3. UserProvider est le joueur. Il échange avec firebase les infos de connexion.
 
 - Identifier les différentes pages de l'application. Décrire à l'aide d'une phrase le rôle de chacune d'entre elles.
 -->AlivePage: Page qui s'affiche aux joueurs vivants.
