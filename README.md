@@ -276,6 +276,9 @@ export const useGame = () => {
 ```
 
 - Dans `CodePage`, rappeler comment un formulaire gère les champs de remplissage des données.o
+```javascript
+onChange={e => setName(e.target.value)}
+```
 
 ### Reprise du design
 
@@ -289,11 +292,24 @@ export const useGame = () => {
 ### Utilisation de Firebase
 
 - Dans 'User.js', comment fait-on pour garder une trace persistente de l'application, même lorsqu'on rafraichit la page ? Comment reconnait-on l'utilisateur lorsqu'il revient dans l'application ?
+Avec le contexte de la fonction useSession.
+
 - Dans Firebase, nous ne pouvons pas ajouter des champs à un utilisateur. Par conséquent, nous devons créer une collection d'utilisateurs et synchroniser les utilisateurs avec cette table. Expliquer où est-ce que cette synchronisation a lieu.
+La synchronisation a lieu dans la fonction useUser. C'est la que la collection user est crée et que l'on ajoute les utilisateurs par leurs ID dans un doc.
+
 - A votre avis, à quoi sert useEffect ?
+Quand le chargement des données est fini, tout s'affiche d'un coup.
+
 - A quoi sert la fonction `unsubscribe` utilisée dans les `useEffect` de `User.js` ?
+Arreter les mises à jour en temps réel de firebase.
+
 - Décrire les trois valeurs de retour de `UseUser`.
+1. Error: indique s'il y a eu des erreurs ou pas.
+2. loading: indique si le chargement est en cours ou pas.
+3. user: c'est l'objet user.
+
 - Combien de collections dans Firebase pouvez-vous identifier ? A quoi correspondent les `doc` ?
+Il y a 2 collections. La collection "user" et la collection "game". Les doc sont des documents qui sont créé pour chaque utilisateur et chaque partie et qui sont stockées dans les collections.
 
 ### Contribuer à l'application
 
