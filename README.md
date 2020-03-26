@@ -248,8 +248,24 @@ const quelquechose = (props) => {
 ```
 
 - Dans `App.js`, identifier les différents producteurs de données. Retrouver leur définition. Quelles données partagent-ils à l'ensemble de l'application ?
+-->MasterGameProvider est le maître du jeu. Il échange avec firebase.
+-->GameProvider est le jeu. Il échange des infos du jeu avec firebase.
+-->UserProvider est le joueur. Il échange avec firebase les infos de connexion.
+
 - Identifier les différentes pages de l'application. Décrire à l'aide d'une phrase le rôle de chacune d'entre elles.
+-->AlivePage: Page qui s'affiche aux joueurs vivants.
+-->CastPage: Page pour procéder au vote.
+-->CodePage: Page qui créer un code à partager à nos amis pour qu'ils rejoignent la partie.
+-->CreatePage: Page pour créer la partie.
+-->DeadPage: Page qui s'affiche aux joueurs morts.
+-->EndPage: Page des résultats finaux de la partie.
+-->NightPage: Page qui affiche les actions durant la nuit.
+-->ResultsPage: Page qui affiche les personnes mortes durant la nuit.
+-->SpellPage: Page des actions que peut faire le magicien.
+-->StartPage: Page d'accueil lorsque l'on lance le jeu. On choisit si on créer une partie ou si on en rejoind une.
+
 - Pourquoi voit-on sur plusieurs pages "Chargement du master game en cours" ?
+
 - Avec les classes, nous utilisions `withMyContext` pour s'inscrire aux données d'un provider. Identifier dans services/Game.js la fonction qui joue désormais ce rôle.
 - Dans `CodePage`, rappeler comment un formulaire gère les champs de remplissage des données.o
 
