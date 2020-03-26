@@ -211,7 +211,42 @@ Activer l'authentification anonyme dans la console de Firebase.
 ### Découverte du code
 
 - Le code utilise des fonctions plutôt que des classes. Ecrire un bouton sous la forme d'une classe et d'une fonction. Retrouver les équivalences entre les méthodes des composants (telles que setState) et celles des fonctions ?
+```javascript
+//Bouton sous la forme d'une classe
+
+class Button extends Component {
+    render() {
+        return (
+          <div>
+              <button>Ceci est un bouton</button>
+          </div>
+            );
+    }
+}
+
+export default Button;
+
+//Bouton sous la forme d'une fonction
+
+const Button = (props) => {
+  return (
+  <button>Ceci est un bouton</button>
+  );
+}
+
+export default Button;
+
+```
+
 - Comment récupérer les props dans une fonction ?
+```javascript
+const quelquechose = (props) => {
+  const { onClick, children } = props;
+...
+}
+
+```
+
 - Dans `App.js`, identifier les différents producteurs de données. Retrouver leur définition. Quelles données partagent-ils à l'ensemble de l'application ?
 - Identifier les différentes pages de l'application. Décrire à l'aide d'une phrase le rôle de chacune d'entre elles.
 - Pourquoi voit-on sur plusieurs pages "Chargement du master game en cours" ?
